@@ -1,0 +1,6 @@
+{
+  "backgroundColor": "#f9f9f9",
+  "usingComponents": {
+    "scroll_card": "../../components/scroll_card/scroll_card"
+  }
+}

@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class='title_box'>
+  <view class='cover_bg_box'>
+  <view class='cover_bg_mask'></view>
+    <image src='{{douban_movie_detail.images.large}}' mode='widthFix' class='cover_bg' ></image>
+  </view>
+  <image src='{{douban_movie_detail.images.small}}' aspectFill class='cover'></image>
+  <text  class='movie_title'>{{douban_movie_detail.title}}</text>
+  <text  class='movie_title_en'>{{douban_movie_detail.original_title}}</text>
+  <text  class='movie_rating'>{{douban_movie_detail.rating.average}}</text>
+  <text  class='movie_ratings_count'>{{douban_movie_detail.ratings_count+"人评价"}}</text>
+
+</view>
+
+<view class='msg_box'>
+  <text>{{douban_movie_detail.durations}}</text>
+  <text>{{"  "+douban_movie_detail.genres}}</text>
+</view>
+<view class='msg_box'>
+  <text>{{douban_movie_detail.pubdates}}</text>
+</view>
+<view class='msg_box'>
+  <text>{{carts_list}}</text>
+</view>
+<view class='button_box'>
+  <button class="msg_button">想看</button>
+  <button class="msg_button">看过</button>
+</view>
+<view class='summary_title'>
+  <text>{{douban_movie_detail.title+"的剧情介绍"}}</text>
+</view>
+<view class='msg_box'>
+  <text>{{douban_movie_detail.summary}}</text>
+</view>
+<view class='comment_title'>
+  <text>{{"短评"+"("+douban_movie_comments.total+")"}}</text>
+</view>
+
+<view class='comment_box' wx:for="{{douban_movie_comments.comments}}" wx:for-item="item" wx:for-index="index" wx:key="this">
+  <view class="author_avatar">
+    <image src="{{item.author.avatar}}" class='author_avatar_img'></image>
+  </view>
+  <view class='content_box'>
+    <view class='author_name'>{{item.author.name}}</view>
+    <view class='author_created'>{{item.created_at}}</view>
+    <view class='content'>{{item.content}}</view>
+  </view>
+</view>

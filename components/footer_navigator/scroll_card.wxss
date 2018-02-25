@@ -1,0 +1,38 @@
+.card_box{
+  background-color: #ffffff;
+  padding: 50rpx 0 30rpx 0;
+}
+.card_title{
+  border-left: 7rpx solid #0099f0;
+  padding:0 0 0 60rpx;
+}
+
+.more{
+  float: right;
+  color: #0099f0;
+}
+.card_item_box{
+  display: inline-block;
+  margin: 20rpx;
+
+}
+.cover_img_box{
+  display: flex;
+}
+
+.cover_img{
+  width: 200rpx;
+  height: 296rpx;
+  margin: 0 auto;
+}
+.scroll_card_box{
+  white-space: nowrap;
+}
+.cover_title{
+  display: block;
+  width: 200rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  text-overflow:ellipsis;
+}

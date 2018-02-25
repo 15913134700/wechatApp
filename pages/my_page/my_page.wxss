@@ -1,0 +1,28 @@
+page{
+  background-color: #f9f9f9;
+}
+
+
+
+.user_info_box{
+  display: flex;
+  height: 390rpx;
+  background-color: #0099f0;
+}
+
+.avatar_box{
+  margin: 80.3rpx auto 0 auto;
+}
+.avatar_img{
+  height: 144rpx;
+  width: 144rpx;
+  border-radius: 50%;
+  flex-grow:1;
+}
+
+.user_nickName{
+  clear: both;
+  color:#fff;
+  margin: 50rpx;
+  flex-grow:2;
+}

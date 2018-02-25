@@ -1,0 +1,17 @@
+
+<view class='card_box'>
+  <view class='card_title'>{{card_name}}
+    <view class='more'>更多></view>
+  </view>
+  <scroll-view scroll-X class='scroll_card_box'>
+    <view wx:for="{{card_data.subjects}}" wx:for-index="index" wx:for-item="item" wx:key="this" class='card_item_box' bindtap="go_to_detail" data-movie_id='{{item.id}}'>
+      
+      <view class='cover_img_box'>
+      <image src='{{item.images.small}}' class='cover_img' mode='aspectFill'></image>
+      </view>
+      <text class='cover_title'>{{item.title}}</text>
+    </view>
+  </scroll-view>
+  <slot></slot>
+  
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/my_page/my_page",
+    "pages/douban/douban",
+    "pages/movie_detail/movie_detail",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0099f0",
+    "navigationBarTitleText": "豆瓣API测试",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/douban/douban",
+        "text": "首页",
+        "iconPath": "images/movie_un.png",
+        "selectedIconPath": "images/movie.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/mine_un.png",
+        "selectedIconPath": "images/mine.png"
+      }
+    ]
+  }
+  
+}

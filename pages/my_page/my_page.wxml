@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class='user_info_box'>
+  <view class='avatar_box'>
+    <image src='{{userInfo.userInfo.avatarUrl}}' class='avatar_img' aspectFill></image>
+  </view>
+  <view class='user_nickName'>{{userInfo.userInfo.nickName}}</view>
+</view>

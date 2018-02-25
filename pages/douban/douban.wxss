@@ -1,0 +1,23 @@
+page{
+  background-color: #f9f9f9;
+}
+.header_search{
+  background-color: #0099f0;
+  border: 0;
+  padding: 30rpx 20rpx 30rpx 20rpx; 
+
+}
+.search_input{
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding:10rpx;
+}
+
+.placeholder{
+  color: #b8b8b8;
+  text-align: center;
+}
+
+.weui-search-bar__cancel-btn{
+  color: #fff;
+}
